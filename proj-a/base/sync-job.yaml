@@ -4,6 +4,7 @@ metadata:
   name: print
   annotations:
     argocd.argoproj.io/hook: PreSync
+    notifications.argoproj.io/subscribe.on-sync-succeeded.slack: e-chef-pipeline
 spec:
   template:
     spec:
