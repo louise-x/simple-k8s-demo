@@ -4,3 +4,4 @@ kind: Kustomization
 resources:
   - service.yaml
   - deployment.yaml
+  - sync-job.yaml
