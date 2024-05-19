@@ -11,6 +11,11 @@ spec:
       labels:
         app: frontend-deployment
     spec:
+      initContainers:
+      - name: print-timestamp
+        image: busybox:1.28
+        command:
+        - date
       containers:
       - name: nginx
         image: test-placeholder
@@ -18,4 +23,3 @@ spec:
         - name: http
           containerPort: 80
         imagePullPolicy: IfNotPresent
-        

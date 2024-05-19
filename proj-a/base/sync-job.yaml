@@ -9,7 +9,7 @@ spec:
     spec:
       containers:
       - name: print
-        image: busybox
+        image: test-placeholder
         command: ["/bin/sh"]
-        args: ["-c", "echo Kubernetes Job"]
+        args: ["-c", "date"]
       restartPolicy: Never
