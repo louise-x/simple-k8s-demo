@@ -10,12 +10,12 @@ spec:
     metadata:
       labels:
         app: frontend-deployment
-  spec:
-    containers:
-    - name: nginx
-      image: test-placeholder
-      ports:
-      - name: http
-        containerPort: 80
-      imagePullPolicy: IfNotPresent
-      
+    spec:
+      containers:
+      - name: nginx
+        image: test-placeholder
+        ports:
+        - name: http
+          containerPort: 80
+        imagePullPolicy: IfNotPresent
+        
