@@ -6,6 +6,8 @@ metadata:
     argocd.argoproj.io/hook: PreSync
     notifications.argoproj.io/subscribe.on-sync-succeeded.slack: e-chef-pipeline
 spec:
+  ttlSecondsAfterFinished: 300
+  backoffLimit: 4
   template:
     spec:
       containers:
@@ -14,3 +16,4 @@ spec:
         command: ["/bin/sh"]
         args: ["-c", "aate"]
       restartPolicy: Never
+      
