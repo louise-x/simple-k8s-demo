@@ -1,0 +1,10 @@
+- source:
+    kind: ConfigMap
+    name: demo-a-cm
+    fieldPath: data.job_version
+  targets:
+    - select:
+        name: test-job-name
+        kind: Job
+      fieldPaths:
+        - metadata.name
