@@ -9,7 +9,7 @@ images:
     newName: public.ecr.aws/nginx/nginx
     newTag: 1.26.0-alpine3.19
 
-replacements:
-  - path: replacement.yaml
+# replacements:
+#   - path: replacement.yaml
   
 nameSuffix: -prod
